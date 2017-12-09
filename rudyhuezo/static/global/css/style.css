@@ -1,0 +1,130 @@
+body {
+  background: #2A3963;
+  padding-top: 91px;
+  margin-bottom: 100px;
+}
+
+.bg-custom {
+  background: #253256;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  padding-left: 2vw;
+  transition: all ease-out 0.2s;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.01, 1.01);
+
+}
+
+.navbar-brand img {
+  width: 65px;
+}
+
+.navbar-nav {
+  padding-right: 2vw;
+}
+
+li.active {
+  border: 0.05rem solid white;
+}
+
+li.nav-item {
+  font-size: 1.2rem;
+  transition: all ease-out 0.2s;
+}
+
+li.nav-item:hover {
+  transform: scale(1.01, 1.01);
+}
+
+#home-hero {
+  height: calc(100vh - 91px);
+}
+
+#home-hero h1 {
+  font-size: 3rem;
+}
+
+#home-hero p {
+  font-size: 1.5rem;
+}
+
+#home-hero img {
+  margin-top: 8vh;
+  height: 25vh;
+  border: 0.1rem solid white;
+}
+
+#home-hero .btn {
+  margin-top: 0vh;
+}
+
+.section {
+  min-height: 100vh;
+  border-style: solid;
+  border-color: #2A3963;
+  border-width: 0.01rem 0rem 0.01rem 0rem;
+  color: #FFF;
+}
+
+.section img {
+  height: 25vh;
+}
+.section.light {
+  background: #FFF;
+  color: #000;
+}
+
+.section h1.display-4 {
+  margin: 4vh;
+}
+
+.card, .card img, input[type="text"], input[type="email"] {
+  border-radius: 0px;
+}
+
+textarea.form-control {
+  border-radius: 0px;
+}
+
+.alert {
+  border-radius: 0px;
+}
+
+.btn {
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+#resume-container, #contact-container {
+  font-size: 1.5rem;
+}
+
+
+#contact-container a {
+  color: #666;
+}
+
+#resume-container a {
+  color: #FFF;
+}
+
+#contact-container form {
+  margin-top: 6vh;
+}
+#contact-container input, #contact-container textarea {
+  font-size: 1.3rem;
+  color: #666;
+}
+
+h2::before {
+  display: block;
+  content: " ";
+  margin-top: -91px;
+  height: 91px;
+  visibility: hidden;
+  pointer-events: none;
+}

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <title>Rudy Huezo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="{% static 'global/css/style.css' %}">
+
+    <link rel="icon" href="{% static 'global/img/rudyhuezo logo 2 favicon.png' %}" sizes="16x16 32x32" type="image/png">
+  </head>
+
+  <body data-spy="scroll" data-target="#rudy-huezo-navbar" data-offset="91">
+    <nav id="rudy-huezo-navbar" class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
+      <a class="navbar-brand" href="{% url 'home:index' %}">
+        <img src="{% static 'global/img/rudyhuezo logo 2.png' %}" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="wrapper">
+      <div id="content">
+        <div class="container-fluid text-center section light my-0" id="home-hero">
+          <h2 id="home"></h2>
+          <img src="{% static 'global/img/profile picture.png' %}" alt="Rudy Huezo" class="rounded-circle mb-4">
+          <h1 class="display-40 my-4"><strong><span id="variable-ability">Programming</span> Solutions Provider.</strong></h1>
+          <p class="lead">If you can imagine it, I can make it a reality.</p>
+          <a class="btn btn-outline-dark btn-lg" href="#about" role="button">Learn more</a>
+          <a class="btn btn-outline-primary btn-lg" href="#contact" role="button">Contact Me</a>
+        </div>
+        <div class="container-fluid text-center section mb-4">
+          <h2 id="projects"></h2>
+          <h1 class="display-4">Projects</h1>
+          <div class="container">
+            <h1 class="display-3 my-4 text-muted">I'm currently working on this section.</h1>
+          </div>
+          {% comment %}
+          <div class="card-deck text-dark">
+            <div class="card my-4 mx-4 no-gutters">
+              <img class="card-img-top img-fluid" src="{% static 'global/img/fracking_tools.PNG' %}" alt="Fracking Tools">
+              <div class="card-body">
+                <h4 class="card-title">Fracking Tools</h4>
+                <p class="card-text">
+                  A web interface with tools to build and compare network matrices; and compare, tag, and analyze documents.
+                </p>
+                <a href="#" class="btn btn-outline-dark w-50 ml-auto mr-auto my-4">View</a>
+              </div>
+            </div>
+            <div class="card my-4 mx-4">
+              <img class="card-img-top" src="{% static 'global/img/bg.jpg' %}" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Climate Game</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-outline-dark w-50 ml-auto mr-auto my-4">View</a>
+              </div>
+            </div>
+            <div class="card my-4 mx-4">
+              <img class="card-img-top" src="{% static 'global/img/bg.jpg' %}" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Tweet Classification</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-outline-dark w-50 ml-auto mr-auto my-4">View</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-deck text-dark">
+            <div class="card my-4 mx-4">
+              <img class="card-img-top" src="{% static 'global/img/bg.jpg' %}" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Polltree</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-outline-dark w-50 ml-auto mr-auto my-4">View</a>
+              </div>
+            </div>
+            <div class="card my-4 mx-4">
+              <img class="card-img-top" src="{% static 'global/img/bg.jpg' %}" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Dupify</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-outline-dark w-50 ml-auto mr-auto my-4">View</a>
+              </div>
+            </div>
+            <div class="card my-4 mx-4">
+              <img class="card-img-top" src="{% static 'global/img/bg.jpg' %}" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Community</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-outline-dark w-50 ml-auto mr-auto my-4">View</a>
+              </div>
+            </div>
+          </div>
+          {% endcomment %}
+        </div>
+
+        <div class="container-fluid text-center section light">
+          <div class="container">
+            <h2 id="about"></h2>
+            <h1 class="display-4">About</h1>
+            <img src="{% static 'global/img/about-img.jpg' %}" alt="Rudy Huezo" class="rounded-circle mb-4">
+            <p class="lead">
+              I'm currently working as an applications programmer at the Department of Environmental Science and Policy at UC Davis.
+              My work focuses on the automation of data collection, sorting, analysis, and visualization.
+            </p>
+            <p class="lead">
+              My passion for programming began in 2007 when I was introduced to HTML and Flash animations. I spent the next 5 years making small
+              static websites, games, and simulations using Flash.
+            </p>
+            <p class="lead">
+              I was formally introduced to programming languages in 2012 when I took my first Python course at UC Davis. From that point on I
+              have worked with various colleagues and professors using a wide array of programming and markup languages, and some web development
+              frameworks: Python, Matlab, R, C/C++/C#, JavaScript, JQuery, p5.js, matter.js, kinetic.js, HTML, CSS, and Bootstrap.
+            </p>
+            <p class="lead">
+              For fun, I love to exercise (hiking, lifting weights, running), I enjoy eating and cooking good food and tasting great beers. I enjoy
+              photography, videography, playing guitar, and fashion. I am interested in deep and thought-provoking conversations and passionate about
+              science and technology.
+            </p>
+            <p class="lead">
+              If you're a person or a small business wanting to take your services or ideas online, you can hire me to help you make your visions a reality.
+            </p>
+          </div><br>
+          <a class="btn btn-outline-dark btn-lg mb-4" href="#contact" role="button">Contact Me</a>
+        </div>
+        <div class="container-fluid text-left section mb-4">
+          <h2 id="resume"></h2>
+          <h1 class="display-4 text-center">Resume</h1>
+          <div class="container" id="resume-container">
+            <p><h1 class="text-center"><strong>Rudy Huezo</strong></h1></p>
+            <p><h3 class="text-center"><a href="mailto:rahuezo@ucdavis.edu">rahuezo@ucdavis.edu</a></h3></p>
+            <br>
+            <br>
+            <p><h3 class="text-left"><strong>Education</strong></h3></p>
+            <div class="container">
+              <p>Bachelor of Science in <strong>Physics</strong> from University of California Davis, June 2016</p>
+            </div>
+
+            <p><h3 class="text-left"><strong>Skills</strong></h3></p>
+            <div class="container">
+              <p><strong>Computer:</strong> Familiarity with Windows, Unix, and Linux and utilities like Git, Microsoft Word, Excel, Atom, Sublime Text, Komodo Edit, Notepad ++, PyCharm, Putty</p>
+              <p><strong>Programming:</strong> Proficient in Python, Django, HTML, JavaScript, jQuery, CSS, Bootstrap, Regex, and familiar with C/C++</p>
+              <p><strong>Coursework:</strong> Proficient in algebra, trigonometry, calculus, differential equations, mechanics, quantum mechanics, electrodynamics, particle physics, experimental physics, object oriented programming and web development</p>
+              <p><strong>Language:</strong> Fluent in English and Spanish (spoken and written)</p>
+            </div>
+
+            <p><h3 class="text-left"><strong>Experience</strong></h3></p>
+            <div class="container">
+              <p><strong>Programmer,</strong> Department of Environmental Science and Policy at University of California, Davis (5/15–Present)</p>
+              <div class="container">
+                <ul>
+                  <li>Using web-scraping techniques for mass-document download.</li>
+                  <li>Building web and desktop graphical user interfaces for processing and analyzing documents using frameworks like Django and Tkinter.</li>
+                  <li>Automating document clustering using cosine similarity, Jaccard similarity and scikit- learn’s spectral clustering library.</li>
+                  <li>Automating the process of building adjacency matrices for social network analysis.</li>
+                  <li>Using agent-based modeling techniques to determine how influential fracking policy entrepreneurs are in networks.</li>
+                  <li>Creating a fracking policy database to allow decision-makers to submit policy information to fracking researchers using Django.</li>
+                  <li>Creating web games to conduct climate change research using JavaScript and MySQL.</li>
+                  <li>Created a Python program to analyze 800GB of tweets in order to determine how often and in what places people talk about weather and climate.</li>
+                  <li>Currently analyzing tweets to quantify the probability that an individual will tweet about climate/weather depending on their location.</li>
+                  <li>Providing documentation and maintenance for all programs.</li>
+                </ul>
+              </div>
+              <p><strong>Intern,</strong> Department of Physics at University of California, Davis (2/13 – 8/13)</p>
+              <div class="container">
+                <ul>
+                  <li>Created simulations of cosmic expansion and photon detection dependence on star radius for UC Davis’ conceptual astronomy courses.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid text-center section light" id="contact-container">
+          <h2 id="contact"></h2>
+          <h1 class="display-4">Contact</h1>
+
+          <div class="container">
+            <blockquote class="blockquote text-center">
+              <p class="lead mb-0">
+                Please feel free to get in touch with me if you have a project that you need help with. Also,
+                I always appreciate making new friends, so don't hessitate to greet me.
+              </p>
+            </blockquote><br>
+
+            <h4><a href="rudyhuezo.work">rudyhuezo.work</a></h4>
+            <h4><a href="tel:4085994933">(408) 599-4933</a></h4>
+            <h4><a href="mailto:rahuezo@ucdavis.edu">rahuezo@ucdavis.edu</a></h4>
+          </div>
+          <div class="container">
+            {% if messages %}
+              {% for message in messages %}
+                {% ifequal message.tags "sent-message success" %}
+                <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                {% endifequal %}
+              {% endfor %}
+            {% endif %}
+            <form class="text-left" action="{% url 'contact:contact' %}" method="post">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col">
+                  <label>First Name</label>
+                  <input type="text" class="form-control" name="first-name">
+                </div>
+                <div class="col">
+                  <label>Last Name</label>
+                  <input type="text" class="form-control" name="last-name">
+                </div>
+              </div>
+              <div class="form-group my-4">
+                <label>Email Address *</label>
+                <input type="email" class="form-control" name="email" required>
+              </div>
+
+              <div class="form-group my-4">
+                <label>Your Message *</label>
+                <textarea class="form-control" name="message" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-outline-primary btn-block btn-lg my-4">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            </form>
+          </div>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/rudy.huezo">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/rudyhuezopineda/">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/rudy-huezo-6ab9ba144/">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script src="{% static 'global/js/main.js' %}" charset="utf-8"></script>
+
+    <script type="text/javascript">
+      let abilities = ['Programming', 'Photography', 'Videography'];
+      let abilitySpan = '#variable-ability';
+      let counter = 1;
+
+      $(abilitySpan).text(abilities[0]);
+      setInterval(function() {
+        displayAbility(abilitySpan);
+      }, 2000);
+    </script>
+  </body>
+</html>
